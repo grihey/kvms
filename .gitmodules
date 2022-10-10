@@ -6,10 +6,10 @@
 	path = oss/gcc
 	url = https://github.com/gcc-mirror/gcc.git
 	ignore = dirty
-#[submodule "oss/qemu"]
-#	path = oss/qemu
-#	url = https://github.com/qemu/qemu.git
-#	ignore = dirty
+[submodule "oss/qemu"]
+	path = oss/qemu
+	url = https://github.com/qemu/qemu.git
+	ignore = dirty
 [submodule "oss/glibc"]
 	path = oss/glibc
 	url = git://sourceware.org/git/glibc.git
@@ -18,10 +18,11 @@
 	path = oss/linux
 	url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
 	ignore = dirty
-#[submodule "oss/qemu-android"]
-#	path = oss/qemu-android
+[submodule "oss/qemu-android"]
+	path = oss/qemu-android
+    url = https://github.com/grihey/RTC_kernel_module.git
 #	url = https://android.googlesource.com/platform/external/qemu
-#	ignore = dirty
+	ignore = dirty
 [submodule "mbedtls"]
 	path = mbedtls
 	url = https://github.com/ARMmbed/mbedtls.git
