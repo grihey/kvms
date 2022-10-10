@@ -20,8 +20,7 @@
 	ignore = dirty
 [submodule "oss/qemu-android"]
 	path = oss/qemu-android
-    url = https://github.com/grihey/RTC_kernel_module.git
-#	url = https://android.googlesource.com/platform/external/qemu
+	url = https://github.com/grihey/qemu-android.git
 	ignore = dirty
 [submodule "mbedtls"]
 	path = mbedtls
