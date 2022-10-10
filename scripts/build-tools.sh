@@ -1,5 +1,3 @@
-#!/bin/bash -e
-
 #
 # Tested on ubuntu 20.n with no other cross tools installed other than
 # 'gcc-aarch64-linux-gnu g++-aarch64-linux-gnu'. These are used for
