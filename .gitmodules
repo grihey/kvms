@@ -18,10 +18,10 @@
 	path = oss/linux
 	url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
 	ignore = dirty
-[submodule "oss/qemu-android"]
-	path = oss/qemu-android
-	url = https://github.com/grihey/qemu-android.git
-	ignore = dirty
+#[submodule "oss/qemu-android"]
+#	path = oss/qemu-android
+#	url = https://github.com/grihey/qemu-android.git
+#	ignore = dirty
 [submodule "mbedtls"]
 	path = mbedtls
 	url = https://github.com/ARMmbed/mbedtls.git
