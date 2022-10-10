@@ -41,6 +41,7 @@ $(FETCH_SOURCES):
 	@git submodule update --init
 
 $(TOOLS_QEMU): | $(FETCH_SOURCES)
+	echo "TOOLDIR - $(TOOLDIR)"
 	@mkdir -p $(TOOLDIR)
 	./scripts/build-tools.sh
 
