@@ -7,6 +7,8 @@
 set -x
 
 TOOLDIR=$BASE_DIR/buildtools
+pwd
+ls -la .
 
 unset CROSS_COMPILE
 unset CC
