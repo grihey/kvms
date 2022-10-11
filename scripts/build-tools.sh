@@ -4,6 +4,8 @@
 # bootstrapping a bit faster
 #
 
+set -x
+
 TOOLDIR=$BASE_DIR/buildtools
 
 unset CROSS_COMPILE
@@ -21,7 +23,7 @@ unset INCLUDES
 unset WARNINGS
 unset DEFINES
 
-export PATH=$TOOLDIR/bin:$TOOLDIR/usr/bin:/bin:/usr/bin
+export PATH=${PATH}:$TOOLDIR/bin:$TOOLDIR/usr/bin:/bin:/usr/bin
 export PKG_CONFIG_PATH=$TOOLDIR/usr/local/lib/x86_64-linux-gnu/pkgconfig
 
 KERNEL_PATCHFILE="$BASE_DIR/patches/host/virt/0001-KVM-external-hypervisor-5.10-kernel-baseport.patch"
