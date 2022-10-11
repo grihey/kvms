@@ -43,6 +43,7 @@ $(FETCH_SOURCES):
 $(TOOLS_QEMU): | $(FETCH_SOURCES)
 	echo "TOOLDIR - $(TOOLDIR)"
 	echo "PATH - $(PATH)"
+	echo "PWD - $(PWD)"
 	@mkdir -p $(TOOLDIR)
 	./scripts/build-tools.sh
 
