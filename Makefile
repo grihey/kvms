@@ -59,7 +59,7 @@ docs:
 docs-clean:
 	$(MAKE) -C $(TOPDIR)/docs clean
 
-$(OBJDIR): | $(TOOLS_QEMU)
+$(OBJDIR):
 	@mkdir -p $(OBJDIR)/$(PLATFORM)
 
 gdb:
