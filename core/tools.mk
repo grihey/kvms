@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-export CROSS_COMPILE := aarch64-linux-gnu-
+export CROSS_COMPILE := aarch64-unknown-linux-musl-
 export CC := $(CROSS_COMPILE)gcc
 export CXX := $(CROSS_COMPILE)g++
 export LD := $(CROSS_COMPILE)ld
