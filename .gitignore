@@ -1,5 +1,4 @@
 .objs
-buildtools/
 docs/latex/
 docs/html/
 docs/refman.pdf
