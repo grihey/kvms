@@ -32,6 +32,8 @@ __BEGIN_DECLS
 #define __need_NULL
 #include <stddef.h>
 
+typedef __builtin_va_list __gnuc_va_list;
+
 #define __need___va_list
 #include <stdarg.h>
 
