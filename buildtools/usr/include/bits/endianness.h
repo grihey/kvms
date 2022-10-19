@@ -5,6 +5,7 @@
 # error "Never use <bits/endianness.h> directly; include <endian.h> instead."
 #endif
 
+#undef __BYTE_ORDER
 /* AArch64 has selectable endianness.  */
 #ifdef __AARCH64EB__
 # define __BYTE_ORDER __BIG_ENDIAN
