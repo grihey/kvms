@@ -32,7 +32,7 @@
 #define	__PDP_ENDIAN	3412
 
 /* This file defines `__BYTE_ORDER' for the particular machine.  */
-#include <endianness.h>
+#include <bits/endianness.h>
 
 /* Some machines may need to use a different endianness for floating point
    values.  */
