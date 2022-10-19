@@ -3,7 +3,7 @@
 #define __HYP_CONFIG_H__
 
 #ifndef STANDALONE
-#include "include/generated/asm-offsets.h"
+#include "includes/generated/asm-offsets.h"
 /*
  * Make sure the kernel build has been properly configured
  * for KVM extension.
