@@ -39,4 +39,5 @@ STDLIB_SRCS	:=	$(addprefix lib/stdlib/,	\
 			subr_prf.c)
 
 INCLUDES	+=	-Iinclude/lib/stdlib		\
-			-Iinclude/lib/stdlib/sys
+			-Iinclude/lib/stdlib/sys		\
+			-Ibuildtools/usr/include
