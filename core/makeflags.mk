@@ -17,6 +17,7 @@ export INCLUDES := -I. -I$(KERNEL_DIR) -I$(CORE_DIR) -I$(CORE_DIR)/common -I$(BA
 		-I$(BASE_DIR)/platform/$(PLATFORM)/$(CHIPSET) \
 		-I$(BASE_DIR)/platform/$(PLATFORM)/$(CHIPSET)/$(PRODUCT) \
 		-I$(BASE_DIR)/stdlib/sys \
+		-I$(BASE_DIR)/buildtools/usr/include \
 		-I$(OBJDIR)/$(PLATFORM)/$(CHIPSET)/$(PRODUCT)
 
 ifeq ($(USE_HW_CRYPTO),1)
