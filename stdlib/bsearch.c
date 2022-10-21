@@ -18,6 +18,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <search.h>
 
 void *
 bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
