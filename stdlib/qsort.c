@@ -22,6 +22,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <search.h>
 #include "commondefines.h"
 
 /* Byte-wise swap two items of size SIZE. */
