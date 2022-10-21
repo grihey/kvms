@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <errno.h>
 #include <spinlock.h>
+#include <sys/types.h>
 
 #include "armtrans.h"
 #include "bits.h"
