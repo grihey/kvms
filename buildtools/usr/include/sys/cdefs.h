@@ -362,9 +362,9 @@
 # endif
 #endif
 
-#ifdef __extern_always_inline
-# define __fortify_function __extern_always_inline __attribute_artificial__
-#endif
+//#ifdef __extern_always_inline
+//# define __fortify_function __extern_always_inline __attribute_artificial__
+//#endif
 
 /* GCC 4.3 and above allow passing all anonymous arguments of an
    __extern_always_inline function to some other vararg function.  */
