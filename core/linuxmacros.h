@@ -87,7 +87,7 @@
 .macro get_fpsimd_guest_restore reg, tmp
 	mov	\reg, #0
     /*adr	\tmp, __fpsimd_guest_restore */
-	mov	\tmp, =__fpsimd_guest_restore
+	ldr	\tmp, =__fpsimd_guest_restore
 	ldr	\tmp, [\tmp]
 	cmp	\tmp, #0
 	b.eq	1f
