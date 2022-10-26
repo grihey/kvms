@@ -3,7 +3,7 @@ AS_OBJ := $(patsubst $(notdir %.S),$(OBJDIR)/%.o,$(notdir $(AS_SOURCES)))
 C_OBJ := $(patsubst %.c,$(OBJDIR)/%.o,$(notdir $(C_SOURCES)))
 OBJS := $(C_OBJ) $(AS_OBJ)
 
-COMMONLIBS := -lcore -lcommon -lplatform-common -lmbedcrypto -lmbedx509 -lmbedtls -larmv8crypto -lstdlib  -u print_gicdreg -L$(GLIBC_PATH)
+COMMONLIBS := -lcore -lcommon -lplatform-common -lmbedcrypto -lmbedx509 -lmbedtls -larmv8crypto -lstdlib  -u print_gicdreg -lc
 
 ifeq ($(PLATFORM),virt)
 LDLIBS := -l$(PLATFORM) $(COMMONLIBS)
