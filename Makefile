@@ -36,27 +36,13 @@ clean:
 	@rm -rf $(OBJDIR)
 	$(MAKE) -Ccore/crypto revert_patch_mbedtls
 
-$(FETCH_SOURCES):
-	@echo "Fetching sources.."
-	@git submodule update --init
-
-$(TOOLS_QEMU): | $(FETCH_SOURCES)
-	@mkdir -p $(TOOLDIR)
-	./scripts/build-tools.sh
-
-tools: $(TOOLS_QEMU)
-
-tools-clean:
-	./scripts/build-tools.sh clean
-	@rm -rf $(TOOLDIR)
-
 docs:
 	$(MAKE) -C $(TOPDIR)/docs
 
 docs-clean:
 	$(MAKE) -C $(TOPDIR)/docs clean
 
-$(OBJDIR): | $(TOOLS_QEMU)
+$(OBJDIR):
 	@mkdir -p $(OBJDIR)/$(PLATFORM)
 
 gdb:
