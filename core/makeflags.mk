@@ -29,7 +29,7 @@ export CFLAGS := -march=armv8-a+nosimd -mgeneral-regs-only
 endif
 
 export CFLAGS += \
-	--sysroot=$(TOOLDIR) --no-sysroot-suffix -fstack-protector-strong -mstrict-align \
+	--sysroot=$(TOOLDIR) --no-sysroot-suffix -mstrict-align \
 	-static -ffreestanding -fno-hosted -std=c99 -fno-omit-frame-pointer -fno-data-sections \
 	$(DEFINES) $(OPTS) $(INCLUDES) $(WARNINGS) $(SANITIZER_OPTS)
 
