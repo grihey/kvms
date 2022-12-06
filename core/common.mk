@@ -8,7 +8,7 @@ COMMONLIBS := -lcore -lcommon -lplatform-common -lmbedcrypto -lmbedx509 -lmbedtl
 ifeq ($(PLATFORM),virt)
 LDLIBS := -l$(PLATFORM) $(COMMONLIBS)
 else
-LDLIBS := -l$(PLATFORM) -l$(PRODUCT) $(COMMONLIBS) $(GLIBC_PATH)/lib/static-stubs.o
+LDLIBS := -l$(PLATFORM) -l$(PRODUCT) $(COMMONLIBS)
 endif
 
 .PHONY: clean run gdb
@@ -53,7 +53,7 @@ $(PROG).bin: $(PROG)
 
 $(PROG): $(OBJS) $(OBJDIR)/$(LIBNAME) FORCE
 	$(vecho) [LD] $@
-	$(Q)$(LD) $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) -static
+	$(Q)$(LD) $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) $(GLIBC_PATH)/lib/static-stubs.o -static
 
 $(OBJDIR)/$(LIBNAME): $(OBJS)
 	$(vecho) [AR] $@
