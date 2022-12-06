@@ -53,7 +53,7 @@ $(PROG).bin: $(PROG)
 
 $(PROG): $(OBJS) $(OBJDIR)/$(LIBNAME) FORCE
 	$(vecho) [LD] $@
-	$(Q)$(LD) $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) $(GLIBC_PATH)/lib/static-stubs.o -static
+	$(LD) $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) $(GLIBC_PATH)/lib/static-stubs.o -static
 
 $(OBJDIR)/$(LIBNAME): $(OBJS)
 	$(vecho) [AR] $@
