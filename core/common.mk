@@ -53,8 +53,7 @@ $(PROG).bin: $(PROG)
 
 $(PROG): $(OBJS) $(OBJDIR)/$(LIBNAME) FORCE
 	$(vecho) [LD] $@
-	$(vecho) [LD] $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) $(GLIBC_PATH)/lib/static-stubs.o -static
-	$(LD) $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) $(GLIBC_PATH)/lib/static-stubs.o -static
+	$(LD) $(LDFLAGS) -lcore -o $(PROG) $(LDLIBS) $(GLIBC_PATH_STATIC)/lib/static-stubs.o $(LETF_OBJ_PATH) $(UNORDTF_OBJ_PATH) -static
 
 $(OBJDIR)/$(LIBNAME): $(OBJS)
 	$(vecho) [AR] $@

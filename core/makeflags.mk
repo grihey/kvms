@@ -36,8 +36,7 @@ export CFLAGS += \
 export ASFLAGS := -D__ASSEMBLY__ $(CFLAGS)
 export LDFLAGS := -nostdlib -O1 --gc-sections --build-id=none \
 		-L$(BASE_DIR)/mbedtls/library \
-		-L$(GLIBC_PATH)/lib \
-		-L$(GLIBC_PATH) \
+		-L$(GLIBC_PATH_STATIC)/lib \
 		-L$(BASE_DIR)/.objs
 
 #
